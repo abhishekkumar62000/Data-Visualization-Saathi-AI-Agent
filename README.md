@@ -209,7 +209,114 @@ Whether you're a data scientist, analyst, or beginner, this app makes it effortl
 
 All packed inside a gorgeous, branded interface that feels **intelligent, intuitive, and immersive.**
 
+
 ---
+
+
+---
+
+### ✅ **Project: Data Visualization Saathi AI Agent**
+
+**LangGraph-style Agent Workflow**
+🧠 **Powered by OpenAI (or Together.ai) & TechSeva Solutions**
+
+---
+
+## 🧩 **LangGraph Workflow Overview**
+
+```
+User Uploads CSV / Enters Prompt
+        │
+        ▼
+📁 File Handler Node ──▶ Checks Validity / Stores DataFrame in Memory
+        │
+        ▼
+🧠 Data Profiler Node
+   └─→ Describes: Rows, Columns, Nulls, Stats
+   └─→ Detects: Categorical, Numeric, Outliers
+        │
+        ▼
+🤖 Question Analyzer Node
+   └─→ Classifies user intent:
+        - Ask a data question?
+        - Request insight/anomaly?
+        - Ask for storytelling/dashboard?
+        - Code-related request?
+        │
+        ▼
+🎯 Decision Router Node (Conditional Split)
+ ┌────────────────────────┬─────────────────────────┬──────────────────────┐
+ │                        │                         │                      │
+ ▼                        ▼                         ▼                      ▼
+📊 Data Q&A Node       📈 Auto Insight Node      🛠️ Code Sandbox Node   📖 Storytelling Node
+AI answers user’s Q   AI generates 3–5         AI creates, edits,     AI writes summary,
+via explanation +     insights, anomaly        runs or debugs code    builds narrative
+generated code        detection, suggestions   → Plots, Tables        exports to PDF/HTML
+
+         ▼                          ▼                         ▼                         ▼
+   🗂️ Q&A History Node      📉 Anomaly Visualizer      🧪 Code Output        📄 Export Report Node
+       (tracks convos)        (plotly or altair)       (Live Preview)        (Markdown / PDF / HTML)
+
+                                ▼
+                   📤 Output to User Interface
+```
+
+---
+
+## 🧱 **Key Nodes in the Workflow**
+
+| Node                   | Function                                               |
+| ---------------------- | ------------------------------------------------------ |
+| `FileHandlerNode`      | Upload & validate CSV file, parse into DataFrame       |
+| `DataProfilerNode`     | Automatic EDA – stats, nulls, column types             |
+| `QuestionAnalyzerNode` | Classifies prompt intent (chat vs task vs code)        |
+| `DecisionRouterNode`   | Directs to Q\&A, Insight, Code, or Storytelling        |
+| `DataQnANode`          | Answers based on DataFrame + generates plots/code      |
+| `AutoInsightNode`      | Finds patterns, correlations, and data anomalies       |
+| `CodeSandboxNode`      | Displays runnable/AI-generated code with edit + output |
+| `StorytellingNode`     | Creates narratives, findings, and recommendations      |
+| `QnAHistoryNode`       | Stores previous questions and answers                  |
+| `AnomalyVisualizer`    | Plots anomalies with z-score thresholds                |
+| `ExportReportNode`     | Allows exporting output (charts/text) as PDF/HTML/MD   |
+
+---
+
+## 🔁 Looping Feedback
+
+Each major node allows users to:
+
+* Ask follow-up questions
+* Regenerate results
+* Edit and rerun code
+* Return to previous tab (via session memory)
+
+---
+
+
+## 🎨 UI Mapping to Nodes
+
+| UI Component         | Connected Node         |
+| -------------------- | ---------------------- |
+| Sidebar              | Memory, Model Selector |
+| File Uploader        | FileHandlerNode        |
+| Data Preview Tabs    | DataProfilerNode       |
+| Q\&A Chatbox         | DataQnANode            |
+| Code Editor + Output | CodeSandboxNode        |
+| Insight Dashboard    | AutoInsightNode        |
+| Narrative Generator  | StorytellingNode       |
+| Download Buttons     | ExportReportNode       |
+
+---
+
+## 🧠 LangGraph Summary
+
+**Agent Type:** Agent Executor w/ Decision Router
+**Graph Type:** Conditional DAG with conversational memory
+**Memory:** Session-based contextual + code+chat history
+**Execution Flow:** Prompt → Router → Branch → Output → Memory → Backtrack/Fork → Save
+
+
+
 
 ## 💻 Run Locally
 
