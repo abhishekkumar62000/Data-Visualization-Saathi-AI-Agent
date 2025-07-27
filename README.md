@@ -16,6 +16,20 @@ https://github.com/user-attachments/assets/8595554e-6fd6-4acf-9da6-b8cc3aef611c
 
 #### 🚀 Powered by TechSeva Solutions
 
+## 🧾 Summary
+
+**📊 Data Visualization Saathi AI Agent** is a smart, modern, AI-first tool that helps users:
+
+* Understand their data
+* Ask questions naturally
+* Visualize trends and outliers
+* Tell compelling data stories
+* Generate ready-to-use dashboards
+
+All packed inside a gorgeous, branded interface that feels **intelligent, intuitive, and immersive.**
+
+
+
 ---
 
 ## 🛠️ What I Built Today
