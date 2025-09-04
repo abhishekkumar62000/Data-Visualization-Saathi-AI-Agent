@@ -754,4 +754,5 @@ CSV Data Sample:
             st.warning("Please upload a CSV file in the Data Analysis tab first.")
 
 if __name__ == "__main__":
+
     main()
